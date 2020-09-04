@@ -42,3 +42,21 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+
+
+
+
+#second  approach
+
+c = 0
+sockets = list(map(int, input().rstrip().split()))
+colors = set(sockets)
+
+for i in colors:
+    c += sockets.count(i) // 2
+
+print(c)    
+        
+
+
+
